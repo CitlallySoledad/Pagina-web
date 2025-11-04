@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>elementary Blog</title>
+  <meta name="theme-color" content="#64baff" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="We design and develop the fast, open, and privacy-respecting replacement for Windows and macOS" />
+
+  <!-- Favicon originales (opcionales) -->
+  <link rel="shortcut icon" href="https://elementary.io/favicon.ico">
+  <link rel="apple-touch-icon" href="https://elementary.io/images/launcher-icons/apple-touch-icon.png">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="pagina.css">
+</head>
+<body class="home">
+
+  <!-- HEADER -->
+  <header>
+    <nav class="primary">
+      <ul>
+        <li>
+          <a href="#" class="logomark" aria-label="elementary logo">
+            <svg xmlns="http://www.w3.org/2000/svg" height="22" width="22" viewBox="0 0 22 22" role="img">
+              <path d="M11 0C4.926 0 0 4.926 0 11s4.926 11 11 11 11-4.926 11-11S17.074 0 11 0zm-.02 1.049h.002a.07.07 0 0 0 .018 0c4.548 0 8.384 3.052 9.57 7.217a17.315 17.315 0 0 1-4.213 5.496c-.847.733-1.773 1.383-2.79 1.842-1.018.458-2.136.719-3.247.656a5.6 5.6 0 0 1-2.271-.633 18.276 18.276 0 0 0 5.078-4.12c.956-1.116 1.791-2.39 2.115-3.833.165-.722.19-1.48.04-2.207a4.079 4.079 0 0 0-.999-1.965 4.013 4.013 0 0 0-1.855-1.098 4.85 4.85 0 0 0-2.153-.078c-1.423.261-2.693 1.086-3.705 2.108-1.787 1.8-2.89 4.34-2.687 6.875.102 1.267.524 2.511 1.252 3.554.143.205.302.398.467.584a16.228 16.228 0 0 1-3.086.739A9.946 9.946 0 0 1 10.98 1.049zm.07 2.02c.692 0 1.387.211 1.936.627a3.2 3.2 0 0 1 1.068 1.49 4.12 4.12 0 0 1 .192 1.848c-.143 1.243-.77 2.388-1.533 3.393-1.354 1.778-3.156 3.203-5.159 4.2-.19.095-.386.187-.582.274a5.114 5.114 0 0 1-1.05-1.295c-.59-1.044-.784-2.284-.67-3.482.116-1.199.526-2.356 1.082-3.43.643-1.244 1.516-2.418 2.732-3.09a4.14 4.14 0 0 1 1.973-.537zm9.83 6.81c.042.367.071.739.071 1.117 0 5.497-4.452 9.953-9.95 9.953a9.917 9.917 0 0 1-7.59-3.53 18.138 18.138 0 0 0 3.17-1.06c.461.346.967.634 1.507.84 1.59.61 3.392.52 4.996-.035 1.603-.555 3.021-1.549 4.256-2.705a18.264 18.264 0 0 0 3.54-4.58z"/>
+            </svg>
+          </a>
+        </li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Developer</a></li>
+        <li><a href="#">Get Involved</a></li>
+        <li><a href="#">Store</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+
+      <ul class="social">
+        <li><a href="#" title="RSS"><span class="sr">RSS</span></a></li>
+        <li><a href="#" title="YouTube"><span class="sr">YouTube</span></a></li>
+        <li><a href="#" title="Mastodon"><span class="sr">Mastodon</span></a></li>
+        <li><a href="#" title="Reddit"><span class="sr">Reddit</span></a></li>
+        <li><a href="#" title="Discord"><span class="sr">Discord</span></a></li>
+      </ul>
+    </nav>
+
+    <nav class="secondary">
+      <div class="tags">
+        <a href="#updates">OS Updates</a>
+        <a href="#appcenter">AppCenter</a>
+        <a href="#devs">Developers</a>
+        <a href="#design">Design</a>
+      </div>
+
+      <div id="search-container">
+        <svg height="16" width="16" aria-hidden="true">
+          <path d="M6.5 1C3.5 1 1 3.5 1 6.5S3.5 12 6.5 12a5.5 5.5 0 0 0 3.1-1l3.7 3.7a1 1 0 1 0 1.4-1.4L10.9 9.6A5.5 5.5 0 0 0 12 6.5C12 3.5 9.5 1 6.5 1Zm0 1.25A4.25 4.25 0 1 1 2.25 6.5 4.25 4.25 0 0 1 6.5 2.25Z" fill="#666"/>
+        </svg>
+        <input type="text" id="search-input" placeholder="Search Posts…" />
+        <ul id="results-container"></ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO -->
+  <main>
+    <section class="latest">
+
+      <!-- DESTACADO -->
+      <a class="featured with-image" href="#">
+        <div class="featured-image">
+          <!-- Imagen local en la misma carpeta -->
+          <img src="maps.png" alt="Featured image: map">
+        </div>
+
+        <header>
+          <h2>More Apps, More Features, More&nbsp;Cowbell!</h2>
+          <h3>Updates for OS 8 and Early&nbsp;Access</h3>
+
+          <div class="byline">
+            <div class="avatar"><img src="autor.png" alt="Danielle Foré"></div>
+            <div class="author"><span class="name">Danielle Foré</span></div>
+            <time datetime="2025-10-06">Mon, Oct 6, 2025</time>
+            <span class="read-time">8 min read</span>
+          </div>
+        </header>
+      </a>
+
+      <!-- TARJETA 1 -->
+      <a class="featured small" href="#">
+        <div class="featured-image">
+          <img src="802.png" alt="elementary 8.0.2">
+        </div>
+        <header>
+          <h2>elementary OS 8.0.2 Available&nbsp;Now</h2>
+          <h3>More reliable and accessible than ever</h3>
+          <div class="byline">
+            <div class="avatar"><img src="autor.png" alt="Danielle Foré"></div>
+            <div class="author"><span class="name">Danielle Foré</span></div>
+            <time datetime="2025-09-22">Mon, Sep 22, 2025</time>
+            <span class="read-time">4 min read</span>
+          </div>
+        </header>
+      </a>
+
+      <!-- TARJETA 2 -->
+      <a class="featured small" href="#">
+        <div class="featured-image">
+          <img src="map2.png" alt="Developer Tools">
+        </div>
+        <header>
+          <h2>Developer Tools, Hardware Enablement, and Multitasking&nbsp;Futures</h2>
+          <h3>Updates for OS 8 and Early&nbsp;Access</h3>
+          <div class="byline">
+            <div class="avatar"><img src="autor.png" alt="Danielle Foré"></div>
+            <div class="author"><span class="name">Danielle Foré</span></div>
+            <time datetime="2025-08-11">Mon, Aug 11, 2025</time>
+            <span class="read-time">7 min read</span>
+          </div>
+        </header>
+      </a>
+
+      <!-- TARJETA 3 -->
+      <a class="featured small" href="#">
+        <div class="featured-image">
+          <img src="map3.png" alt="Social Responsibility">
+        </div>
+        <header>
+          <h2>Supporting Disability Is Our Social&nbsp;Responsibility</h2>
+          <h3>Updates for OS 8 and Early&nbsp;Access</h3>
+          <div class="byline">
+            <div class="avatar"><img src="autor.png" alt="Danielle Foré"></div>
+            <div class="author"><span class="name">Danielle Foré</span></div>
+            <time datetime="2025-07-02">Wed, Jul 2, 2025</time>
+            <span class="read-time">7 min read</span>
+          </div>
+        </header>
+      </a>
+    </section>
+
+    <!-- MORE STORIES -->
+    <section class="more">
+      <h2>More Stories</h2>
+
+      <a class="featured with-image" href="#">
+        <div class="featured-image">
+          <img src="map3.png" alt="Pride Updates">
+        </div>
+        <header>
+          <h2>The First Pride Was a Riot, and So Are These&nbsp;Updates</h2>
+          <h3>New bug fixes and features for OS&nbsp;8</h3>
+          <div class="byline">
+            <div class="avatar"><img src="autor.png" alt="Danielle Foré"></div>
+            <div class="author"><span class="name">Danielle Foré</span></div>
+            <time datetime="2025-06-02">Mon, Jun 2, 2025</time>
+            <span class="read-time">4 min read</span>
+          </div>
+        </header>
+      </a>
+
+      <a class="featured with-image" href="#">
+        <div class="featured-image">
+          <img src="map4.png" alt="A Little Bit Now">
+        </div>
+        <header>
+          <h2>A Little Bit Now, A Lotta Bit&nbsp;Later</h2>
+          <h3>Updates for OS 8 and Early&nbsp;Access</h3>
+          <div class="byline">
+            <div class="avatar"><img src="autor.png" alt="Danielle Foré"></div>
+            <div class="author"><span class="name">Danielle Foré</span></div>
+            <time datetime="2025-05-06">Tue, May 6, 2025</time>
+            <span class="read-time">7 min read</span>
+          </div>
+        </header>
+      </a>
+
+      <a class="featured with-image" href="#">
+        <div class="featured-image">
+          <img src="map5.png" alt="8.0.1 Available Now">
+        </div>
+        <header>
+          <h2>elementary OS 8.0.1 Available&nbsp;Now</h2>
+          <h3>A bundle of bug fixes and a couple creature&nbsp;comforts</h3>
+          <div class="byline">
+            <div class="avatar"><img src="autor.png" alt="Danielle Foré"></div>
+            <div class="author"><span class="name">Danielle Foré</span></div>
+            <time datetime="2025-03-18">Tue, Mar 18, 2025</time>
+            <span class="read-time">7 min read</span>
+          </div>
+        </header>
+      </a>
+    </section>
+
+    <!-- PAGINACIÓN & CTA MEDIUM -->
+    <nav class="pagination">
+      <a href="#" class="next">Older</a>
+    </nav>
+
+    <div class="medium">
+      <hr />
+      <article>
+        <h2>Looking for More?</h2>
+        <p>
+          While we're migrating posts to the elementary blog, some older stories are still only on the
+          <a href="https://medium.com/elementaryos" target="_blank" rel="noopener">official elementary Medium publication</a>.
+          Head over there to read more.
+        </p>
+      </article>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 elementary, Inc</p>
+    <ul>
+      <li><a href="#">Press</a></li>
+      <li><a href="#">Brand</a></li>
+      <li><a href="#">OEMs</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Team</a></li>
+      <li><a href="#">Open Source</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>
