@@ -1,0 +1,191 @@
+:root{
+  --text:#333; --text-strong:#222; --muted:#666;
+  --bg:#fff; --alt:#fafafa; --border:#e6e6e6;
+  --pill-gold:#c98a0a; --pill-green:#208a12; --pill-red:#c6302b;
+  --pill-purple:#6b43b9; --pill-blue:#2b77d3; --pill-gray:#66727b;
+  --btn-gray:#e9e9ec; --radius:12px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+
+.container{width:min(1080px,92vw);margin:0 auto}
+.center{text-align:center}
+.text-muted{color:var(--muted)}
+.max600{max-width:600px;margin:0 auto}
+.max760{max-width:760px;margin:0 auto}
+
+.h2{font-weight:800;font-size:28px;color:var(--text-strong);margin:0 0 10px}
+.h3{font-weight:700;font-size:20px;color:#444;margin:0 0 6px}
+
+/* ===== Parte 1 ===== */
+.topbar{border-bottom:1px solid var(--border);background:#fff}
+.topbar__inner{display:flex;justify-content:space-between;align-items:center;padding:10px 0}
+.menubar{display:flex;gap:22px}
+.menubar a{color:#566; text-decoration:none; font-weight:600; padding:6px 0; border-bottom:2px solid transparent}
+.menubar a:hover{color:#111; border-bottom-color:#08c}
+.menubar .active{color:#111;border-bottom-color:#08c}
+.menubar__icons .dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#bdbdbd;margin-left:8px}
+
+.hero{padding:48px 0 26px;border-bottom:1px solid var(--border)}
+.hero__inner{max-width:880px;margin:0 auto;text-align:center}
+.hero h1{margin:0 0 10px;font-size:clamp(30px,5vw,48px);line-height:1.1;font-weight:800;color:#1a1a1a}
+.hero .lead{margin:0 auto;max-width:720px;color:#555}
+
+.pillbar{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin-top:26px}
+.pill{display:inline-block;padding:10px 16px;color:#fff;border-radius:8px;font-weight:700;box-shadow:0 1px 0 rgba(0,0,0,.1)}
+.pill--gold{background:var(--pill-gold)}
+.pill--green{background:var(--pill-green)}
+.pill--red{background:var(--pill-red)}
+.pill--purple{background:var(--pill-purple)}
+.pill--blue{background:var(--pill-blue)}
+.pill--gray{background:var(--pill-gray)}
+
+/* ===== Parte 2 ===== */
+.section{padding:28px 0;border-bottom:1px solid var(--border)}
+.section.alt{background:var(--alt)}
+.narrow{max-width:900px}
+
+/* ===== Parte 3 ===== */
+.grid{display:grid;gap:26px}
+.grid-2{grid-template-columns:1fr}
+.grid-3{grid-template-columns:1fr}
+@media (min-width:900px){
+  .grid-2{grid-template-columns:repeat(2,1fr)}
+  .grid-3{grid-template-columns:repeat(3,1fr)}
+}
+
+.card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:16px}
+.card__icon{height:56px;display:grid;place-items:center;margin-bottom:8px}
+.card__icon img{height:42px;width:auto}
+.card__text{margin:0 0 12px;color:#555}
+.btn{display:inline-block;padding:10px 14px;border-radius:8px;border:1px solid #d7d7db;background:#f6f6f7;color:#222;font-weight:700;text-decoration:none}
+.btn:hover{background:#eef5ff;border-color:#b7dcff;text-decoration:none}
+.btn--gold{background:#e2a22c;border-color:#ce971f;color:#fff}
+.btn--green{background:#2aa61a;border-color:#2aa61a;color:#fff}
+.btn--purple{background:#6b43b9;border-color:#6b43b9;color:#fff}
+.btn--blue{background:#2b77d3;border-color:#2b77d3;color:#fff}
+.btn--red{background:#d4433d;border-color:#d4433d;color:#fff}
+.btn--light{background:var(--btn-gray);border-color:#d7d7db;color:#333}
+.wide{min-width:260px;text-align:center}
+
+/* ===== Parte 4 ===== */
+.trans__grid{align-items:center}
+.map{border:1px dashed var(--border);border-radius:12px;padding:10px;background:#fff}
+
+/* ===== Parte 5 ===== */
+.support__grid{gap:34px}
+.support__col .btncol{display:flex;flex-direction:column;gap:12px;margin-top:10px}
+
+/* ===== Parte 6 (final estilo igual que imagen) ===== */
+.browser {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,.06);
+  overflow: hidden;
+  max-width: 760px;          /* centrado y proporción igual al ejemplo */
+  margin: 0 auto 40px;       /* centrado horizontal y separación inferior */
+}
+
+.browser__bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border);
+  background: #f8f8f8;
+}
+
+.bbtn {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ddd;
+  display: inline-block;
+}
+
+.addr {
+  flex: 1;
+  height: 10px;
+  border-radius: 4px;
+  background: #e6e6e6;
+}
+
+.maxi {
+  font-size: 14px;
+  color: #999;
+}
+
+/* Contenido interior del recuadro */
+.browser__content {
+  padding: 60px 40px;        /* más altura interna */
+  min-height: 300px;         /* altura visible más grande */
+  text-align: center;
+}
+
+.browser__content h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 14px;
+}
+
+.browser__content p {
+  max-width: 640px;
+  margin: 0 auto 20px;
+  color: #555;
+}
+
+.browser__content .btnrow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Botones dentro */
+.browser__content .btn {
+  font-weight: 700;
+  padding: 10px 18px;
+  border-radius: 6px;
+  border: 1px solid #d7d7db;
+  text-decoration: none;
+}
+
+.browser__content .btn:hover {
+  background: #eef5ff;
+  border-color: #b7dcff;
+}
+
+.browser__content .btn--light {
+  background: #f2f2f2;
+  color: #333;
+}
+
+.browser__content .btn--purple {
+  background: #6b43b9;
+  color: #fff;
+  border-color: #6b43b9;
+}
+
+
+/* ===== Parte 7 ===== */
+.features{margin-top:18px}
+.feat{padding:8px}
+.design{margin-top:18px}
+.design__card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:16px;text-align:center}
+.design__icon{height:54px;display:grid;place-items:center;margin-bottom:8px}
+.design__icon img{height:32px;width:auto}
+.btnrow{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-start}
+.center .btnrow{justify-content:center}
+
+/* ===== Utilidades ===== */
+.link{color:#08c;text-decoration:none}
+.link:hover{text-decoration:underline}
+
+@media (max-width:680px){
+  .wide{min-width:0}
+}

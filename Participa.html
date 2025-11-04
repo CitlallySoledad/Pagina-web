@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Participa · elementary</title>
+  <link rel="stylesheet" href="estilosparticipa.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===================== PARTE 1: Header + Héroe + Pastillas de colores ===================== -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <nav class="menubar">
+        <a href="#">Soporte</a>
+        <a href="#">Desarrollar</a>
+        <a class="active" href="#">Participa</a>
+        <a href="#">Tienda</a>
+        <a href="#">Blog</a>
+      </nav>
+      <div class="menubar__icons">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero__inner">
+      <h1>Sea parte de algo más grande</h1>
+      <p class="lead">
+        Todo lo que creamos es código abierto en un 100% y desarrollado en colaboración con personas de todo el mundo.
+        Aunque no sea programador, puede involucrarse y hacer la diferencia.
+      </p>
+
+      <div class="pillbar color-tabs">
+        <a href="#funding"     class="pill pill--gold">Apoyo económico</a>
+        <a href="#translations" class="pill pill--green">Traducciones</a>
+        <a href="#support"      class="pill pill--red">Soporte</a>
+        <a href="#web"          class="pill pill--purple">Web</a>
+        <a href="#desktop"      class="pill pill--blue">Escritorio</a>
+        <a href="#design"       class="pill pill--gray">Diseño</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PARTE 2: Título y texto de “Apoyo económico” ===================== -->
+  <section id="funding" class="section alt">
+    <div class="container narrow">
+      <h2 class="h2">Apoyo económico</h2>
+      <p class="center text-muted">
+        Con la ayuda de nuestros usuarios y seguidores hemos pasado de un reducido grupo de voluntarios a una pequeña
+        empresa sostenible. Cada apoyo nos permite mejorar elementary OS y abordar problemas cada vez más complejos y ambiciosos.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== PARTE 3: Tarjetas de financiación (4 bloques) ===================== -->
+  <section class="section">
+    <div class="container grid grid-2">
+      <!-- GitHub Sponsors -->
+      <article class="card funding">
+        <div class="card__icon">
+          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" loading="lazy">
+        </div>
+        <p class="card__text">
+          Financie elementary directamente y reciba un emblema en nuestro perfil de GitHub para mostrar su apoyo.
+          GitHub Sponsors no cobra cargos adicionales, lo cual permite que su contribución vaya más allá.
+        </p>
+        <a class="btn btn--gold" href="https://github.com/sponsors/elementary">Patrocinar en GitHub</a>
+      </article>
+
+      <!-- Patreon -->
+      <article class="card funding">
+        <div class="card__icon">
+          <img src="https://elementary.io/images/get-involved/patreon.svg" alt="Patreon" loading="lazy">
+        </div>
+        <p class="card__text">
+          Patreon funciona como una campaña de mecenazgo persistente. Elija un monto de contribución mensual para ayudarnos a alcanzar
+          nuestras metas. Además, reciba recompensas exclusivas y acceda anticipadamente a determinado contenido.
+        </p>
+        <a class="btn btn--gray" href="https://www.patreon.com/elementary">Apoyar en Patreon</a>
+      </article>
+
+      <!-- PayPal -->
+      <article class="card funding">
+        <div class="card__icon">
+          <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="PayPal" loading="lazy">
+        </div>
+        <p class="card__text">
+          Utilice una tarjeta de crédito, débito o una cuenta de PayPal. Puede realizar un único pago o programar pagos periódicos.
+        </p>
+        <a class="btn btn--light" href="https://www.paypal.com/donate">Vía PayPal</a>
+      </article>
+
+      <!-- Liberapay -->
+      <article class="card funding">
+        <div class="card__icon">
+          <img src="https://elementary.io/images/get-involved/liberapay_logo_black.svg" alt="Liberapay" loading="lazy">
+        </div>
+        <p class="card__text">
+          Programe una contribución periódica a través de Liberapay, la plataforma de financiación sin fines de lucro y de código abierto.
+        </p>
+        <a class="btn btn--light" href="https://liberapay.com/elementary">Contribuir en Liberapay</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== PARTE 4: Traducciones (texto + mapa + 2 botones) ===================== -->
+  <section id="translations" class="section alt">
+    <div class="container">
+      <h2 class="h2 center">Traducciones</h2>
+
+      <div class="grid grid-2 trans__grid">
+        <div>
+          <p>
+            El sistema operativo elementary lo crean y usan personas de todo el mundo. Ayúdenos a mejorar la experiencia
+            traduciéndolo a más idiomas.
+          </p>
+          <p>
+            Tanto elementary OS como este sitio web se traducen a través de una plataforma en línea llamada Weblate.
+            <a class="link" href="https://docs.elementary.io/contributor-guide/translate">Aprenda más →</a>
+          </p>
+
+          <div class="btnrow">
+            <a class="btn btn--light" href="https://matrix.to/#/#translations:matrix.org">Únase a la conversación</a>
+            <a class="btn btn--green" href="https://l10n.elementaryos.org">Sugiera traducciones</a>
+          </div>
+        </div>
+
+        <figure class="map">
+          <img src="https://elementary.io/images/get-involved/translations.svg" alt="Mapa mundial" loading="lazy">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PARTE 5: Soporte (2 columnas con botones gris/rojo) ===================== -->
+  <section id="support" class="section">
+    <div class="container">
+      <h2 class="h2 center">Soporte</h2>
+
+      <div class="grid grid-2 support__grid">
+        <!-- Q&A -->
+        <div class="support__col">
+          <h3 class="h3">Preguntas y respuestas</h3>
+          <p>Utilizamos <em>Github Discussions</em> para preguntas de la comunidad. Cualquiera puede crear una cuenta y comenzar a preguntar y contestar.</p>
+
+          <div class="btncol">
+            <a class="btn btn--light wide" href="https://github.com/orgs/elementary/discussions/new">Preguntas nuevas</a>
+            <a class="btn btn--red wide" href="https://github.com/orgs/elementary/discussions?discussions_q=label%3Aquestion+is%3Aunanswered">Preguntas sin respuesta</a>
+          </div>
+        </div>
+
+        <!-- Docs -->
+        <div class="support__col">
+          <h3 class="h3">Documentación</h3>
+          <p>
+            elementary proporciona la documentación básica tanto para usuarios como desarrolladores. Todos los documentos están escritos en
+            <em>markdown</em> y alojados en GitHub, por lo que es muy fácil enviar modificaciones o crear una nueva sección.
+          </p>
+
+          <div class="btncol">
+            <a class="btn btn--light wide" href="https://github.com/elementary/docs/blob/main/user-guide/README.md">Guía de conceptos básicos</a>
+            <a class="btn btn--light wide" href="https://github.com/elementary/docs">Documentación para desarrolladores</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PARTE 6: Desarrollo web (marco de navegador + 2 botones) ===================== -->
+  <section id="web" class="section alt">
+    <div class="container">
+      <div class="browser">
+        <div class="browser__bar">
+          <span class="bbtn"></span><span class="bbtn"></span><span class="bbtn"></span>
+          <div class="addr"></div>
+          <span class="maxi">⤢</span>
+        </div>
+
+        <div class="browser__content">
+          <h2 class="h2 center">Desarrollo web</h2>
+          <p class="center text-muted max600">
+            Nuestra página web está creada mediante HTML, CSS, PHP y JavaScript. Siempre buscamos personas con experiencia en estas áreas
+            que quieran ayudarnos a mejorarla.
+          </p>
+
+          <div class="btnrow center">
+            <a class="btn btn--light" href="https://github.com/elementary/website/issues/new/choose">Informar de un problema en el sitio web</a>
+            <a class="btn btn--purple" href="https://github.com/elementary/website">Código fuente de la web en GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PARTE 7: Desarrollo del SO + Diseño ===================== -->
+  <section id="desktop" class="section">
+    <div class="container narrow">
+      <h2 class="h2 center">Desarrollo del sistema operativo</h2>
+      <p class="center text-muted">
+        Nuestro entorno de escritorio y todas sus aplicaciones se crean utilizando Vala, GTK, Granite y otras librerías de código abierto.
+        Alojamos todo nuestro código y realizamos todo el desarrollo en GitHub. Si nunca antes ha desarrollado para elementary OS,
+        le recomendamos que consulte nuestra guía para desarrolladores.
+      </p>
+
+      <div class="btnrow center">
+        <a class="btn btn--light" href="https://docs.elementary.io/developer-guide/">Guía para desarrolladores</a>
+        <a class="btn btn--blue" href="https://github.com/elementary">Explorar el código</a>
+      </div>
+
+      <div class="grid grid-3 features">
+        <div class="feat">
+          <h3 class="h3 center">Informar de problemas</h3>
+          <p class="center text-muted">
+            Ayúdenos detectando errores e informando sobre estos. O bien, colabore confirmando, aclarando y depurando los informes existentes.
+          </p>
+          <div class="btnrow center">
+            <a class="btn btn--light" href="https://docs.elementary.io/contributor-guide/bug-reports">Consulte la guía</a>
+          </div>
+        </div>
+
+        <div class="feat">
+          <h3 class="h3 center">Corrija problemas</h3>
+          <p class="center text-muted">
+            Contribuya con elementary OS mediante la corrección de errores, la mejora de funcionalidades o implementando características nuevas.
+            <a class="link" href="https://docs.elementary.io/contributor-guide/getting-started#finding-issues">Aprenda más</a>
+          </p>
+          <div class="btnrow center">
+            <a class="btn btn--light" href="https://github.com/orgs/elementary/projects/6/views/1?filterQuery=good%20first%20issue">
+              Informes de errores para principiantes
+            </a>
+          </div>
+        </div>
+
+        <div class="feat">
+          <h3 class="h3 center">Cree aplicaciones</h3>
+          <p class="center text-muted">
+            Mejore el ecosistema de elementary OS y gane dinero creando programas de calidad para el Centro de Aplicaciones.
+          </p>
+          <div class="btnrow center">
+            <a class="btn btn--light" href="https://developer.elementary.io/docs/publish/appcenter">Publique en el Centro de Aplicaciones</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="design" class="section alt">
+    <div class="container">
+      <h2 class="h2 center">Diseño</h2>
+      <p class="center text-muted max760">
+        Nuestro equipo de diseño convierte las ideas en informes claros y proyectos entregables.
+        Antes de comenzar, se recomienda leer nuestro flujo de trabajo en diseño.
+        <a class="link" href="https://docs.elementary.io/contributor-guide/design">Aprenda más →</a>
+      </p>
+
+      <div class="grid grid-3 design">
+        <article class="design__card">
+          <div class="design__icon">
+            <img src="https://elementary.io/images/get-involved/bugs.svg" alt="" loading="lazy">
+          </div>
+          <p class="text-muted">
+            Nuestro equipo de diseño realiza un seguimiento de los problemas de «Necesita diseño» en GitHub. Estos pueden necesitar discusión,
+            <em>wireframes</em> o entregables.
+          </p>
+          <a class="btn btn--gray" href="https://github.com/search?q=org%3Aelementary+label%3A%22needs+design%22&type=issues">
+            Ver problemas de «Necesita diseño»
+          </a>
+        </article>
+
+        <article class="design__card">
+          <div class="design__icon">
+            <img src="https://elementary.io/images/get-involved/stylesheet.svg" alt="" loading="lazy">
+          </div>
+          <p class="text-muted">
+            elementary OS utiliza una hoja de estilo para el sistema escrita en CSS. Define cómo la interfaz, tales como los botones, barras de herramientas y menús, se muestran.
+          </p>
+          <a class="btn btn--gray" href="https://github.com/elementary/stylesheet">Ver hoja de estilos</a>
+        </article>
+
+        <article class="design__card">
+          <div class="design__icon">
+            <img src="https://elementary.io/images/get-involved/icons.svg" alt="" loading="lazy">
+          </div>
+          <p class="text-muted">
+            elementary OS viene con un conjunto de iconos vectoriales disponibles para aplicaciones de terceros.
+          </p>
+          <a class="btn btn--gray" href="https://github.com/elementary/icons">Explorar iconos</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
