@@ -12,32 +12,56 @@ body {
 }
 
 /* ===== NAVBAR ===== */
+/* ===== NAVBAR ===== */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 60px;
-    background: #fff;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 10px 40px;
 }
 
-.navbar ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
+/* contenedor conjunto del logo y menú */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* espacio entre logo y menú */
 }
 
-.navbar a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
+/* imagen del logo */
+.logo-img {
+  height: 42px;
+  width: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-.navbar a:hover {
-    color: #0078ff;
+.logo-img:hover {
+  transform: scale(1.05);
 }
+
+/* menú */
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #0078ff;
+}
+
 
 /* ===== HERO ===== */
 .hero {
@@ -284,4 +308,25 @@ footer {
     text-align: center;
     padding: 15px;
     font-size: 0.9rem;
+}
+/* ===== HERO MOCKUP ===== */
+.mockup {
+  position: relative;
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.laptop {
+  width: 700px;       /* ajusta según tu imagen */
+  max-width: 100%;
+  display: block;
+}
+
+.pantalla {
+  position: absolute;
+  top: 2%;          /* mueve verticalmente la pantalla */
+  left: 12.5%;        /* mueve horizontalmente */
+  width: 75%;       /* ajusta el ancho de la pantalla */
+  height: auto;
+  border-radius: 6px;
 }
