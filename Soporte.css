@@ -1,0 +1,282 @@
+/* ===== Reset base ===== */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+:root {
+  --bg: #0f1115;
+  --card: #171a21;
+  --line: #2a2f3a;
+  --text: #e9ebf0;
+  --muted: #b8bdc7;
+  --accent: #4cc2ff;
+  --radius: 16px;
+  --wrap: 1100px;
+  --shadow: 0 6px 20px rgba(0,0,0,.35);
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+/* ===== Navbar ===== */
+/* --- NAVBAR NUEVO --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--surface);
+  padding: 10px 40px;
+  border-bottom: 1px solid #222;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  filter: brightness(0.9);
+  transition: filter 0.2s;
+}
+
+.icon:hover {
+  filter: brightness(1.2);
+}
+
+/* --- Responsive --- */
+@media (max-width: 720px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+  .navbar-left, .navbar-right {
+    justify-content: center;
+  }
+}
+
+
+/* ===== Hero ===== */
+.hero {
+  text-align: center;
+  padding: 60px 20px 30px;
+}
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.lead {
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+/* ===== Apps Grid ===== */
+.apps {
+  padding: 30px 20px;
+}
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.app-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px;
+  text-align: center;
+  transition: transform .2s, box-shadow .2s;
+}
+.app-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+.icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 12px;
+  border-radius: 12px;
+  background: #1b1e25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon img {
+  width: 40px;
+  height: 40px;
+}
+.app-card h3 {
+  font-size: 14px;
+  color: var(--text);
+}
+
+/* ===== Docs Section ===== */
+.docs {
+  text-align: center;
+  padding: 50px 20px;
+}
+.docs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+.doc-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 25px;
+  width: 300px;
+}
+.doc-icon {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.doc-card p {
+  color: var(--muted);
+  font-size: 15px;
+}
+.help-link a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.help-link a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Payments Section ===== */
+.payments {
+  text-align: center;
+  padding: 60px 20px;
+  background: #101218;
+  border-top: 1px solid #222;
+}
+.payments h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+.payments p {
+  color: var(--muted);
+  max-width: 850px;
+  margin: 0 auto;
+  font-size: 15px;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  border-top: 1px solid #222;
+  padding: 20px;
+  color: var(--muted);
+  font-size: 14px;
+}
+.footer-grid {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-links {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+.footer-links a {
+  color: var(--muted);
+  text-decoration: none;
+}
+.footer-links a:hover {
+  color: var(--text);
+}
+
+/* ===== SECCIÓN DE APLICACIONES CENTRADA ===== */
+.apps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 60px 0;
+  width: 100%;
+}
+
+/* Cuadrícula centrada */
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  justify-content: center;  /* centra horizontalmente */
+  justify-items: center;    /* centra cada tarjeta */
+  align-items: center;      /* centra verticalmente dentro del grid */
+  gap: 25px;
+  max-width: 1000px;        /* límite de ancho para que no se extienda demasiado */
+  width: 100%;
+  margin: 0 auto;           /* centra el grid dentro del contenedor */
+  list-style: none;
+  padding: 0;
+}
+
+/* Tarjetas individuales */
+.app-card {
+  background-color: #131313;
+  border-radius: 16px;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.app-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(255,255,255,0.1);
+}
+
+.app-card img {
+  width: 48px;
+  height: 48px;
+}
